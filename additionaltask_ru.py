@@ -8,4 +8,4 @@ with open('books.csv', 'r') as file:
 
     for row in b:
         
-        print( ' - Автор: ' + row[3] + ' - Название книги: ' + row[1] + ' - Кол-во выдач: ' + row[8])
+        print( ' Автор: ' + row[3] + ' - Название книги: ' + row[1] + ' - Кол-во выдач: ' + row[8])
