@@ -8,7 +8,7 @@ def call_book(author):
         
         a = 7
         for row in csvreader:
-            if len(row) >= a + 1 and float(row[a]) >= 150:
+            if len(row) >= a + 1 and author == row[3] and float(row[a]) >= 150:
                 print(row)
 
 author = input("Enter author's name: ")
