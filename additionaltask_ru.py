@@ -1,11 +1,14 @@
 import csv
 
 with open('books.csv', 'r') as file:
-    a = csv.reader(file, delimiter=';')
-    b = (sorted(a, reverse=True,  key=lambda a: a[8]))[1:21]
+    row[3] = BookAuthor
+    row[1] = BookTitle
+    row[8] = Downloads
+    reader = csv.reader(file, delimiter=';')
+    top_book = (sorted(a, reverse=True,  key=lambda a: a[8]))[1:21]
 
    
 
     for row in b:
         
-        print( ' Автор: ' + row[3] + ' - Название книги: ' + row[1] + ' - Кол-во выдач: ' + row[8])
+        print( ' Автор: ' + BookAuthor + ' - Название книги: ' + BookTitle + ' - Кол-во выдач: ' + Downloads )
