@@ -1,6 +1,6 @@
 import csv
-row[2] = Book-Author
-row[1] = Book-Title
+row[2] = BookAuthor
+row[1] = BookTitle
 row[5] = Downloads
 
 with open('books-en.csv', 'r') as file:
@@ -11,4 +11,4 @@ with open('books-en.csv', 'r') as file:
 
     for row in top_book:
         
-        print( ' Author: ' +  Book-Author + ' - Name of book: ' + Book-Title + ' - Downloads: ' + Downloads )
+        print( ' Author: ' +  BookAuthor + ' - Name of book: ' + BookTitle + ' - Downloads: ' + Downloads )
